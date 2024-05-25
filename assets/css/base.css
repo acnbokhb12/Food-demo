@@ -1,0 +1,26 @@
+:root{
+
+    --primary-color:#ee4d2d;
+    --white-color: #fff;
+    --black-color:#000;
+    --text-color:#333;
+    --header-color:#ffffffdb;
+    --title-font-header:3.4rem;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%; 
+     line-height: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    
+    background-color: #e6e6e6;
+}
+.clear{
+    clear: both;
+}

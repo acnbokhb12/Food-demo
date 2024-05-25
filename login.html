@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="screen__info__user">
+        <div class="btn__back-home ">
+            <a href="Home.html" class="link-back-home btn ">
+                <div class=" btn__back-detail">
+                    <h2><i class="fa-solid fa-reply"></i>Back To Home</h2>
+                </div> 
+            </a>
+           
+        </div>
+         <div class="info__user-container container">
+            <!-- SIGNIN -->
+            <div id="sign-in-form" class="user-signin form-container">
+                <div class="user-sign-container">
+
+                    <header class="user-signin-header">
+                        <h1 class="signin-header-title">Welcome back!</h1>
+                        <p class="signin-header-desc">Enter your Information to access your account</p>
+                    </header>
+                    <div class="signin-user-body">                    
+                        <form action="#" class="form" id="form1"> 
+                            <!-- username -->
+                            <label for="email-log" class="label-title-infor"><i class="fa-solid fa-envelope"></i></i>Email</label><br>
+                            <input type="email" id="email-log" name="username" class="input-user-signin" placeholder=" Enter your email" required><br>
+                            <!-- password -->
+                            <label for="password-title-signin" class="label-title-infor"><i class="fa-solid fa-lock"></i>Password</label><br>                      
+                            <input type="text" id="password-title-signin"  class="input-user-signin last-child" placeholder=" Enter your password" required/><br>
+                            <!-- take error something -->
+                            <span id="wrongNameOrPass" class="error-user">Wrong Username or Password !</span><br><br>
+                            
+                            <button class="btn btn-info btn-login-user">Sign In</button><br>
+                            <a href="#" class="user-forgot">Forgot your password?</a><br>
+                        </form>
+                    </div>
+                    <footer class="user-signin-footer">
+                        <p class="dont-have-account">
+                            You don't have account ?<a href="" class="signup-btn-link" id="come-signup">Signup</a>
+                        </p>
+                    </footer>
+
+                </div>
+                <div class="user-signin-img">
+                     
+                        <div class="signin-img-desc">
+                            <h1>Sign In</h1>
+                            <p>Happy to see you become a part of our great community.
+                                <i class="fa-solid fa-heart"></i> </p>
+                            <h3>Make or Made</h3>
+                        </div>
+                    
+                </div>
+            </div>
+            <!-- SIGNUP  -->
+            <div id="sign-up-form" class="user-signup form-container">
+                <div class="user-signup-img">
+                    <div class="signup-img-desc">
+                        <h1>Sign Up</h1>
+                        <p>Please enter your details to sign up and be part of our community. <i class="fa-solid fa-heart"></i></p>
+                        <h3>Make or Made</h3>
+                    </div>
+                </div>
+                <div class="user-sign-container">
+
+                    <header class="user-signup-header">
+                        <h1 class="signup-header-title">Wellcom to family</h1>
+                        <p class="signup-header-desc">Discover more about cusine in the world </p>
+                    </header>
+                    <div class="signup-user-body">                    
+                        <form action="#" class="form" id="form2"> 
+                            <!-- Email -->   
+                                <div class="form-group">
+                                    <i class="fa-solid fa-envelope  icon-signup"></i>
+                                    <input type="email" id="email-signup" name="username" class="input-user-signup" placeholder="Email" required>                         
+                                    <!-- <label for="email-signup" class="label-title-infor-signup"> Email</label> -->
+                                    <span class="errol-format-email">Wrong format email : abc@gmail.com</span>
+                                </div>             
+                                
+                                <!-- password -->
+                                <div class="form-group">
+                                    <i class="fa-solid fa-lock icon-signup"></i>
+                                    <input type="text" id="password-title-signup"  class="input-user-signup" placeholder="Password" required/> 
+                                    <!-- <label for="password-title-signup" class="label-title-infor-signup"><i class="fa-solid fa-lock icon-signup"></i> Password</label>  -->
+                                    <span class="errol-format-pass">Length from 8 to 20</span>
+                                </div>
+                                <!-- pass wordd again -->
+                                <div class="form-group">
+                                    <i class="fa-solid fa-lock icon-signup"></i>   
+                                    <!-- <label for="password-title-signup" class="label-title-infor-signup">Confirm password</label>                       -->
+                                    <input type="text" id="password-title-signup"  class="input-user-signup" placeholder="Confirm password" required/> 
+                                  
+                                    <span class="errol-notmatch-pass">passwords are not the same</span>
+                                    
+                                </div>   
+                                <!-- UserName -->
+                                <div class="form-group">
+                                    <i class="fa-solid fa-user icon-signup"></i>
+                                    <!-- <label for="username-title-logup" class="label-title-infor-signup">UserName</label>                       -->
+                                    <input type="text" id="username-title-logup"  class="input-user-signup" placeholder="UserName" required/> 
+                                    
+                                </div>    
+                                <!-- Phone -->
+                                <div class="form-group">
+                                    <i class="fa-solid fa-phone icon-signup"></i>
+                                    <!-- <label for="phonenumber-signup" class="label-title-infor-signup">Phone number</label>                    -->
+                                    <input type="text" id="phonenumber-signup"  class="input-user-signup" placeholder="Phone number" required/> 
+                                    <span class="errol-format-number">Start number with 0 </span>
+                                </div>
+                                <!-- Submit -->
+                                <button class="btn btn-info btn-signup-user">Sign Up</button><br>
+            
+                        </form>
+                    </div>
+                    <footer class="user-signup-footer">
+                        <p class="have-account">
+                            Already have an account?<a href="" class="signin-btn-link" id="come-signin">Sign In</a>
+                        </p>
+                    </footer>
+
+                </div>
+            </div>
+         </div>  
+         </div>  
+    </div>
+    <!-- <form id="signinForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <span id="usernameError" class="error">Please enter a valid username</span><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <span id="passwordError" class="error">Please enter a valid password</span><br><br>
+
+        <input type="submit" value="Sign In">
+        <span id="successMessage" class="success">Sign in successful!</span>
+    </form>             -->
+     
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+        const action= params.get('action');
+        
+        const signInForm =document.getElementById('sign-in-form');
+        const signUpForm = document.getElementById('sign-up-form');
+
+        if(action === 'login'){
+            signInForm.classList.add('active');
+            signUpForm.classList.remove('active');
+        }else if(action === 'register'){
+            signUpForm.classList.add('active');
+            signInForm.classList.remove('active');
+        }else{
+            signInForm.classList.add('active');
+
+        }
+
+    });
+ 
+        const signInForm =document.getElementById('sign-in-form');
+        const signUpForm = document.getElementById('sign-up-form');
+        // }
+        // linksignup.addEventListener('click', opensignup)
+        document.getElementById('come-signup').addEventListener('click',function(event){
+            event.preventDefault();
+            signInForm.classList.remove('active');
+            signUpForm.classList.add('active');
+            }
+        )
+        document.getElementById('come-signin').addEventListener('click', function(event){
+            event.preventDefault();
+            signUpForm.classList.remove('active');
+            signInForm.classList.add('active');
+        })  
+    </script>
+    <!-- <script src="./assets/js/main.js"></script> -->
+</body>
+</html>
