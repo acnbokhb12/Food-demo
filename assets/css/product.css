@@ -1,0 +1,452 @@
+.product__content__detail-main {
+    width: 100%;
+    /* height: 500px; */
+    background-color: var(--nen-color);
+    /* margin-top: 11.6rem; */
+}
+
+.product__content__detail-container {
+    padding-top: 13.6rem;
+    padding-bottom: 2rem;
+   
+}
+
+.product__content_grid {
+    padding: 2rem 2rem 4rem ;
+    background-color: var(--block-color);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.product__content__detail-info-img {
+    padding-right: 25px;
+}
+
+.product__content__detail-info-img img {
+    width: 100%;
+    height: calc(100vh - 116px);
+    border-radius: 8px;
+    background-position: center;
+    object-fit: cover;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+     
+
+}
+
+.product__content__detail-sumary {
+    /* padding-left: 10px; */
+}
+
+/* title name product */
+.product__content__detail-title {
+    font-weight: 700;
+    font-size: 4.4rem;
+    color: var(--white-color);
+    filter: brightness(0.9);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.product__content__detail-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.product__content__detail-rating-list {
+    /* display: inline-block; */
+    padding-left: 0;
+    padding-right: 1.2rem;
+}
+
+.product__content__detail-rating-list li {
+    display: inline-block;
+    list-style: none;
+    color: #c8d331;
+    padding: 0 0.8px;
+}
+
+.product__content__detail-rating-list li i {
+    font-size: 1.4rem;
+
+}
+
+.product__content__detail-rating-customer p {
+    font-size: 1.4rem;
+}
+
+.product__content__detail-rating-customer p a {
+    color: var(--white-color);
+    filter: brightness(0.8);
+    text-decoration: none;
+}
+
+.product__content__detail-rating-customer p:hover a {
+    color: var(--purpo-color);
+}
+
+.product__content__detail-desc p {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    filter: brightness(0.7);
+}
+
+.product__content__detail-price {
+    font-size: clamp(2rem, 4rem, 6rem);
+    font-weight: 700;
+    color: var(--blue-color);
+
+}
+
+.product__content__detail-form {
+    border-top: 1px #959595 solid;
+    padding: 1.5rem;
+}
+
+.product__detail-form-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__detail-form-desc>h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    filter: brightness(0.9);
+}
+
+.product__detail-quantity-btn {
+    /* font-size: 1.6rem; */
+    line-height: 2.5;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.plus-btn-quantity,
+.minus-btn-quantity {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--purpo-color);
+    border: var(--purpo-color);
+}
+
+.plus-btn-quantity {
+    margin-left: 10px;
+}
+
+.minus-btn-quantity {
+    margin-right: 10px;
+}
+
+#quantity-input {
+    font-size: 1.6rem;
+    height: 40px;
+    width: 36%;
+    text-align: center;
+    border: none;
+    background-color: #a5a5a5;
+    font-weight: 600;
+}
+
+/* .plus-btn-quantity{
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+ } */
+.product__btnbuy-ing-pro {
+    width: 100%;
+    display: flex;
+}
+
+.product__detail-buybtn {
+    width: 50%;
+    font-size: 1.2rem;
+    line-height: 2.5;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--purpo-color);
+    border: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 6px 0;
+}
+
+.product__detail-buybtn:first-child {
+    margin-right: 10px;
+
+}
+
+.product__detail-buybtn:last-child {
+    background-color: #FFA500;
+
+}
+
+.product__detail-buybtn i {
+    padding-right: 4px;
+}
+
+/* Ẩn các nút tăng giảm của input type number trên tất cả trình duyệt */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Hiệu ứng khi hover hoặc focus */
+input[type=number]:hover,
+input[type=number]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.product__content__extra-info {
+    padding: 2.4rem 0;
+    border-top: 1px #959595 solid;
+}
+
+.product__content__extra-info-list li {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    filter: brightness(0.7);
+}
+
+.product__content__extra-brand {
+    display: flex;
+    padding-top: 2.4rem;
+    border-top: 1px #959595 solid;
+    align-items: center;
+}
+
+.product__content__extra-brand h5 {
+    margin-right: 3rem;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--white-color);
+    filter: brightness(0.9);
+}
+
+.product__content__extra-brand img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    padding: 4px;
+    background-color: var(--purpo-color);
+    border-radius: 8px;
+
+}
+
+.product__content_ingredient-grid {
+    padding-top: 2.6rem;
+    width: 100%;
+}
+.product__content-ingredient-recipe{
+    padding: 2rem 2rem 1rem;
+    background-color: var(--block-color);
+    border-radius: 8px;
+}
+.link-ingredient-recipe {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 3.1rem;
+    margin-top: 1rem;
+   
+}
+
+.link-ingredient-recipe li {
+    list-style: none;
+    display: inline-block;
+    /* padding: 8px 6px; */
+}
+
+.description-ingredient {
+    margin-right: 4rem;
+}
+
+.description-ingredient-open {
+    background-color: var(--purpo-color);
+    border-radius: 8px;
+}
+
+.description-recipe-open {
+    background-color: var(--purpo-color);
+    border-radius: 8px;
+
+}
+
+.description-recipe a,
+.description-ingredient a {
+    text-decoration: none;
+    color: #fff;
+    filter: brightness(0.9);
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1rem 3.2rem;
+    display: block;
+    position: relative;
+}
+
+.product_ingredient-img-list {
+    margin-bottom: 1rem;
+}
+
+.product_ingredient-img-item {
+    /* width: 50%; */
+    position: relative;
+    margin-bottom: 15px;
+    padding: 0 12px;
+
+}
+
+.product_ingredient-img-element {
+    width: 100%;
+}
+
+.product_ingredient-img-element img {
+    width: 100%;
+    height: 130px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+
+.product_ingredient-name-element {
+    /* position: absolute; */
+    bottom: 10px;
+    left: 30px;
+    padding: 8px 20px;
+}
+
+.product_ingredient-description-element {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 4px;
+    left: 20px;
+    color: var(--white-color);
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.product_ingredient-description-element>h3 {
+    overflow: hidden;
+    line-height: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    display: block;
+    color: var(--white-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+}
+
+.ingredient__quantity-element {
+    display: flex;
+}
+
+.ingredient__quantity-element>h2:first-child {
+    margin-right: 8px;
+}
+
+.product__content-recipe {
+    display: none;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.product__content-recipe-descripion {
+    background-color: #fff;
+    /* width: 100%; */
+    border-radius: 8px;
+}
+
+.product__content-recipe-descripion h5 {
+    padding: 12px;
+    font-size: 1.8rem;
+}
+
+.open-recipe-close-ingredient {
+    display: block;
+}
+
+@media screen and (max-width:1200px) {
+    .product__content__extra-brand {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product__content__extra-brand h5 {
+        margin-bottom: 1.2rem;
+    }
+
+    .product__content__detail-info-img img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .product__btnbuy-ing-pro {
+        flex-direction: column;
+    }
+
+    .product__detail-buybtn {
+        width: 100%;
+    }
+
+    .product__detail-buybtn:last-child {
+        margin-top: 1.5rem;
+    }
+
+    .product__content__extra-info-list li {
+        font-size: 1.4rem;
+    }
+
+    .description-recipe a,
+    .description-ingredient a {
+        padding: 0.8rem 2rem;
+        font-size: 2rem;
+    }
+
+    .product_ingredient-description-element>h3 {
+        font-size: 2.6rem;
+    }
+
+    .ingredient__quantity-element h2 {
+        font-size: 1.8rem;
+    }
+
+    .product__content-recipe-descripion h5 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .product__content__detail-info-img img {
+        height: 400px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    .product__content__detail-info-img img {
+        height: 260px;
+    }
+}

@@ -1,11 +1,14 @@
 :root{
-
     --primary-color:#ee4d2d;
     --white-color: #fff;
     --black-color:#000;
     --text-color:#333;
     --header-color:#ffffffdb;
     --title-font-header:3.4rem;
+    --blue-color:#6560f0;
+    --purpo-color: #7c5fe3;
+    --nen-color: #2b2a3f;
+    --block-color:#34334a;
 }
 *{
     box-sizing: inherit;
@@ -17,8 +20,7 @@ html{
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body{
-    
+body{ 
     background-color: #e6e6e6;
 }
 .clear{
