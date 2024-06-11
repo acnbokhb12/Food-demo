@@ -9,6 +9,10 @@
     --purpo-color: #7c5fe3;
     --nen-color: #2b2a3f;
     --block-color:#34334a;
+    --green-color: #78bf4d;
+    --orange-color:#FFA500;
+    --slider-color:#e5e7eb;
+    --subheader-color:#82858b;
 }
 *{
     box-sizing: inherit;

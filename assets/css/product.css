@@ -1,20 +1,20 @@
 .product__content__detail-main {
     width: 100%;
     /* height: 500px; */
-    background-color: var(--nen-color);
+    background-color: #e5e7eb;
     /* margin-top: 11.6rem; */
-}
-
-.product__content__detail-container {
-    padding-top: 13.6rem;
-    padding-bottom: 2rem;
-   
-}
-
-.product__content_grid {
-    padding: 2rem 2rem 4rem ;
-    background-color: var(--block-color);
-    border-radius: 8px;
+    }
+    
+    .product__content__detail-container {
+        padding-top: 13.6rem;
+        padding-bottom: 2rem;
+        
+        }
+        
+        .product__content_grid {
+            padding: 2rem 2rem 4rem ;
+            border-radius: 8px;
+            background-color: #ffffff;
     margin-bottom: 2rem;
 }
 
@@ -41,7 +41,7 @@
 .product__content__detail-title {
     font-weight: 700;
     font-size: 4.4rem;
-    color: var(--white-color);
+    color: var(--black-color);
     filter: brightness(0.9);
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -76,7 +76,7 @@
 }
 
 .product__content__detail-rating-customer p a {
-    color: var(--white-color);
+    color: var(--black-color);
     filter: brightness(0.8);
     text-decoration: none;
 }
@@ -87,14 +87,14 @@
 
 .product__content__detail-desc p {
     font-size: 1.6rem;
-    color: var(--white-color);
-    filter: brightness(0.7);
+    color: #4f4f4f;
+    
 }
 
 .product__content__detail-price {
     font-size: clamp(2rem, 4rem, 6rem);
     font-weight: 700;
-    color: var(--blue-color);
+    color: var(--black-color);
 
 }
 
@@ -112,7 +112,7 @@
     margin-bottom: 1.5rem;
     font-weight: 700;
     font-size: 3rem;
-    color: #fff;
+    color: #404040;
     filter: brightness(0.9);
 }
 
@@ -130,8 +130,8 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: var(--purpo-color);
-    border: var(--purpo-color);
+    background-color: var(--green-color);
+    border: var(--green-color);
 }
 
 .plus-btn-quantity {
@@ -148,7 +148,7 @@
     width: 36%;
     text-align: center;
     border: none;
-    background-color: #a5a5a5;
+    background-color: #9da0a5;
     font-weight: 600;
 }
 
@@ -169,7 +169,7 @@
     line-height: 2.5;
     text-transform: uppercase;
     font-weight: 700;
-    background-color: var(--purpo-color);
+    background-color: var(--green-color);
     border: none;
     display: flex;
     flex: 1;
@@ -218,7 +218,7 @@ input[type=number]:focus {
 
 .product__content__extra-info-list li {
     font-size: 1.6rem;
-    color: var(--white-color);
+    color: #9da0a5;
     filter: brightness(0.7);
 }
 
@@ -233,7 +233,7 @@ input[type=number]:focus {
     margin-right: 3rem;
     font-weight: 700;
     font-size: 1.7rem;
-    color: var(--white-color);
+    color: #000000;
     filter: brightness(0.9);
 }
 
@@ -242,7 +242,7 @@ input[type=number]:focus {
     height: 100%;
     object-fit: cover;
     padding: 4px;
-    background-color: var(--purpo-color);
+    /* background-color: var(--purpo-color); */
     border-radius: 8px;
 
 }
@@ -253,7 +253,7 @@ input[type=number]:focus {
 }
 .product__content-ingredient-recipe{
     padding: 2rem 2rem 1rem;
-    background-color: var(--block-color);
+    background-color: #ffffff;
     border-radius: 8px;
 }
 .link-ingredient-recipe {
@@ -276,12 +276,12 @@ input[type=number]:focus {
 }
 
 .description-ingredient-open {
-    background-color: var(--purpo-color);
+    background-color: var(--orange-color);
     border-radius: 8px;
 }
 
 .description-recipe-open {
-    background-color: var(--purpo-color);
+    background-color: var(--green-color);
     border-radius: 8px;
 
 }
@@ -289,7 +289,7 @@ input[type=number]:focus {
 .description-recipe a,
 .description-ingredient a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     filter: brightness(0.9);
     font-size: 2.4rem;
     font-weight: 700;
@@ -300,6 +300,8 @@ input[type=number]:focus {
 
 .product_ingredient-img-list {
     margin-bottom: 1rem;
+    padding: 2rem 1rem;
+    
 }
 
 .product_ingredient-img-item {
@@ -371,7 +373,7 @@ input[type=number]:focus {
 }
 
 .product__content-recipe-descripion {
-    background-color: #fff;
+    background-color: #e5e7eb;
     /* width: 100%; */
     border-radius: 8px;
 }
