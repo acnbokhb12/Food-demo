@@ -1,11 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Font icon -->
+    <!-- <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.2-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
 </head>
+
 <body>
-    
+    <!-- nhung header -->
+    <script src="./assets/js/header.js"></script>
+    <!-- view cart -->
+    <div class="cart__main container">
+        <div class="cart__container__title">
+            <div class="cart__title-description row">
+                <div class="cart__title-img col-md-3">Dishes</div>
+                <div class="cart__title-description-information col-md-9">
+                    <div class="row">
+                        <div class="cart__title-infor-desc col-md-6">Description</div>
+                        <div class="cart__title-price col-md-3">Price</div>
+                        <div class="cart__title-total col-md-3">Total</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- section order cart -->
+            <section class="cart__about__property">
+                <div class="cart__about__property-desc row">
+                    <!-- img -->
+                    <div class="cart__about__property-img col-6 col-md-3">
+                        <a href="Product.html" class="cart__about__property-img-link">
+                            <img src="https://www.allrecipes.com/thmb/CjzJwg2pACUzGODdxJL1BJDRx9Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6788-amish-white-bread-DDMFS-4x3-6faa1e552bdb4f6eabdd7791e59b3c84.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="cart__about__property-infor-container col-6 col-md-9">
+                        <div class="row cart__about__property-infor-row ">
+                            <!-- desc namr-->
+                            <div class="cart__about__property-infor-desc col-md-6">
+                                <div class="cart__about__property-name">
+                                    <h3>Amish White Bread</h3>
+                                </div>
+                                <div class="cart__about__property-quantity ">
+                                    <h3>QUANTITY: <span>10</span></h3>
+                                </div>
+                                <div class="cart__about__property-update-delete">
+                                    <button type="button" class="cart__property-update">Edit</button>
+                                    <button type="button" class="cart__property-delete">
+                                        <a href="#">Delete</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- price -->
+                            <div class="cart__about__property-price col-md-3">
+                                <h3 class="property-price-cart">100000</h3>
+                            </div>
+                            <!-- total -->
+                            <div class="cart__about__property-total col-md-3">
+                                <h3 class="property-total-cart">1000000</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cart__about__property">
+                <div class="cart__about__property-desc row">
+                    <!-- img -->
+                    <div class="cart__about__property-img col-6 col-md-3">
+                        <a href="Product.html" class="cart__about__property-img-link">
+                            <img src="https://www.allrecipes.com/thmb/CjzJwg2pACUzGODdxJL1BJDRx9Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6788-amish-white-bread-DDMFS-4x3-6faa1e552bdb4f6eabdd7791e59b3c84.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="cart__about__property-infor-container col-6 col-md-9">
+                        <div class="row cart__about__property-infor-row ">
+                            <!-- desc namr-->
+                            <div class="cart__about__property-infor-desc col-md-6">
+                                <div class="cart__about__property-name">
+                                    <h3>Amish White Bread</h3>
+                                </div>
+                                <div class="cart__about__property-quantity ">
+                                    <h3>QUANTITY: <span>10</span></h3>
+                                </div>
+                                <div class="cart__about__property-update-delete">
+                                    <button type="button" class="cart__property-update">Edit</button>
+                                    <button type="button" class="cart__property-delete">
+                                        <a href="#">Delete</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- price -->
+                            <div class="cart__about__property-price col-md-3">
+                                <h3 class="property-price-cart">100000</h3>
+                            </div>
+                            <!-- total -->
+                            <div class="cart__about__property-total col-md-3">
+                                <h3 class="property-total-cart">1000000</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cart__about__property">
+                <div class="cart__about__property-desc row">
+                    <!-- img -->
+                    <div class="cart__about__property-img col-6 col-md-3">
+                        <a href="Product.html" class="cart__about__property-img-link">
+                            <img src="https://www.allrecipes.com/thmb/CjzJwg2pACUzGODdxJL1BJDRx9Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6788-amish-white-bread-DDMFS-4x3-6faa1e552bdb4f6eabdd7791e59b3c84.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="cart__about__property-infor-container col-6 col-md-9">
+                        <div class="row cart__about__property-infor-row ">
+                            <!-- desc namr-->
+                            <div class="cart__about__property-infor-desc col-md-6">
+                                <div class="cart__about__property-name">
+                                    <h3>Amish White Bread</h3>
+                                </div>
+                                <div class="cart__about__property-quantity ">
+                                    <h3>QUANTITY: <span>10</span></h3>
+                                </div>
+                                <div class="cart__about__property-update-delete">
+                                    <button type="button" class="cart__property-update">Edit</button>
+                                    <button type="button" class="cart__property-delete">
+                                        <a href="#">Delete</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- price -->
+                            <div class="cart__about__property-price col-md-3">
+                                <h3 class="property-price-cart">100000</h3>
+                            </div>
+                            <!-- total -->
+                            <div class="cart__about__property-total col-md-3">
+                                <h3 class="property-total-cart">1000000</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             
+
+            
+        
+        <!-- order total price -->
+        <div class="cart__about__check-subtotal">
+            <div class="cart__about__check-subtotal-container">
+                <div class="row cart__about__check-subtotal-container-row">
+                    <div class="check-subtotal-quantity-total-item col-md-4">
+                       <h3>Subtotal ( <span>2 Items</span> ):</h3>
+                    </div>
+                    <div class="check-subtotal-quantity-price-item col-md-4">
+                        <h3 id="subtotal-quantity-price-item">2000000 </h3>
+                    </div>
+                    <div class="cart__about__checkout-btn col-md-4">          
+                            <a class="checkout-btn" href="#">Check Out </a>                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nhung footer -->
+    <script src="./assets/js/footer.js"></script>
+    <script>
+        const priceElements = document.querySelectorAll('.property-price-cart');
+        const totalElements = document.querySelectorAll('.property-total-cart');
+
+        priceElements.forEach(function (element) {
+            let price = parseInt(element.innerText);
+            let formattedAmount = price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+            element.innerText = formattedAmount;
+        });
+        totalElements.forEach(function (element) {
+            let total = parseInt(element.innerText);
+            let formattedTotal = total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+            element.innerText = formattedTotal;
+        });
+
+        let subTotal = parseInt(document.getElementById('subtotal-quantity-price-item').innerText);
+
+// Định dạng số thành tiền Việt Nam Đồng (VND)
+let formattedsubTotal = subTotal.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+// Cập nhật nội dung của phần tử HTML với số tiền đã định dạng
+document.getElementById('subtotal-quantity-price-item').innerText = formattedsubTotal;
+    </script>
 </body>
+
 </html>

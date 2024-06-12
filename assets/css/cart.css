@@ -1,0 +1,215 @@
+.cart__main {
+    width: 100%;
+
+    color: var(--slider-color);
+}
+
+.cart__container__title {
+    padding-top: 12.6rem;
+}
+
+.cart__title-description {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    /* text-align: center; */
+    font-size: 2rem;
+    padding: 0.7rem 1rem;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-bottom: 1.8rem;
+    text-transform: uppercase;
+}
+
+.cart__about__property-desc {
+    background-color: #ffffff;
+    padding: 1.8rem 1rem;
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 1.8rem;
+}
+
+.cart__about__property-img-link {
+    width: 80%;
+    display: block;
+}
+
+.cart__about__property-img-link img {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    border-radius: 8px;
+    background-position: center;
+    object-fit: cover;
+}
+
+.cart__about__property-infor-row {
+    height: 100%;
+}
+
+.cart__about__property-quantity,
+.cart__about__property-name {
+    margin-bottom: 1.3rem;
+}
+
+.cart__about__property-infor-desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart__about__property-quantity h3,
+.cart__about__property-name h3 {
+    color: var(--black-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.cart__about__property-quantity>h3 span {
+    background-color: var(--green-color);
+    padding: 0.1rem 1rem;
+    border-radius: 4px;
+}
+
+.cart__about__property-update-delete {
+    display: flex;
+}
+
+.cart__property-update,
+.cart__property-delete {
+    border: none;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    width: 40%;
+    display: block;
+}
+.cart__property-update:hover,
+.cart__property-delete:hover {
+    opacity: 0.8;
+}
+.cart__property-update {
+    color: var(--black-color);
+    background-color: var(--green-color);
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+.cart__property-delete {
+    background-color: var(--orange-color);
+
+}
+
+.cart__property-delete a {
+    padding: 0.4rem 1.7rem;
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 600;
+    display: block;
+}
+
+.cart__about__property-total,
+.cart__about__property-price {
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.cart__about__property-price h3,
+.cart__about__property-total h3 {
+    font-size: 2rem;
+}
+
+.cart__about__check-subtotal {
+    margin-bottom: 1.6rem;
+}
+
+.cart__about__check-subtotal-container {}
+
+.cart__about__check-subtotal-container-row {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1.4rem 1rem;
+    border-radius: 3px;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.check-subtotal-quantity-total-item {
+    height: 100%;
+
+}
+
+.check-subtotal-quantity-total-item h3 {
+    color: var(--black-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.check-subtotal-quantity-price-item h3 {
+    color: var(--green-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.checkout-btn {
+    background-color: var(--orange-color);
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+.checkout-btn:hover {
+    opacity: 0.8;
+    color: var(--black-color);
+    text-decoration: none;
+
+}
+
+.checkout-btn a {}
+
+@media screen and (max-width:768px) {
+    .cart__title-description {
+        display: none;
+    }
+
+    .cart__about__property-desc {}
+
+    .cart__about__property-img-link {
+        width: 100%;
+    }
+
+    .cart__about__property-img-link img {
+        margin-bottom: 1rem;
+        height: 180px;
+    }
+
+    .cart__about__property {}
+
+    .cart__about__property-price h3 {
+        /* font-size: 2rem; */
+    }
+
+    .cart__about__property-total {
+        display: none;
+    }
+
+    .check-subtotal-quantity-price-item,
+    .check-subtotal-quantity-total-item {
+        margin-bottom: 0.8rem;
+    }
+
+}
