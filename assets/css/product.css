@@ -1,8 +1,6 @@
 .product__content__detail-main {
     width: 100%;
-    /* height: 500px; */
-    background-color: #e5e7eb;
-    /* margin-top: 11.6rem; */
+    background-color: var(--slider-color);
     }
     
     .product__content__detail-container {
@@ -24,17 +22,15 @@
 
 .product__content__detail-info-img img {
     width: 100%;
-    height: calc(100vh - 116px);
+    height: calc(80vh - 116px);
     border-radius: 8px;
     background-position: center;
     object-fit: cover;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-     
-
 }
 
 .product__content__detail-sumary {
-    /* padding-left: 10px; */
+    
 }
 
 /* title name product */
@@ -54,7 +50,7 @@
 }
 
 .product__content__detail-rating-list {
-    /* display: inline-block; */
+   
     padding-left: 0;
     padding-right: 1.2rem;
 }
@@ -193,7 +189,6 @@
     padding-right: 4px;
 }
 
-/* Ẩn các nút tăng giảm của input type number trên tất cả trình duyệt */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -242,9 +237,7 @@ input[type=number]:focus {
     height: 100%;
     object-fit: cover;
     padding: 4px;
-    /* background-color: var(--purpo-color); */
     border-radius: 8px;
-
 }
 
 .product__content_ingredient-grid {
@@ -260,7 +253,7 @@ input[type=number]:focus {
     display: flex;
     justify-content: center;
     padding-left: 0;
-    margin-bottom: 3.1rem;
+    margin-bottom: 1.6rem;
     margin-top: 1rem;
    
 }
@@ -268,7 +261,6 @@ input[type=number]:focus {
 .link-ingredient-recipe li {
     list-style: none;
     display: inline-block;
-    /* padding: 8px 6px; */
 }
 
 .description-ingredient {
@@ -305,7 +297,6 @@ input[type=number]:focus {
 }
 
 .product_ingredient-img-item {
-    /* width: 50%; */
     position: relative;
     margin-bottom: 15px;
     padding: 0 12px;
@@ -328,7 +319,6 @@ input[type=number]:focus {
 }
 
 .product_ingredient-name-element {
-    /* position: absolute; */
     bottom: 10px;
     left: 30px;
     padding: 8px 20px;
@@ -374,7 +364,6 @@ input[type=number]:focus {
 
 .product__content-recipe-descripion {
     background-color: #e5e7eb;
-    /* width: 100%; */
     border-radius: 8px;
 }
 

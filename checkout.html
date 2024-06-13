@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.2-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+     
+</head>
+<body  >
+    <script src="./assets/js/header.js"></script>
+    <div class="checkout-page-main container" >
+        <header class="checkout-page-main-introheader">
+          <h2 class="checkout-page-main-header col-12">Checkout form</h2>
+            <p class="text-intro-checkout col-12"> Please have your credit card information and shipping address ready.</p>  
+        </header>  
+
+          
+        <div class="row form__checkout-main">
+          <div class="form__checkout-infor-cast col-md-5 order-md-2 ">
+             <h4 class="checkout-infor-cast-title">
+                <span>Your Cart</span>
+                <span class="badge badge-secondary badge-pill">3</span>
+             </h4>
+             <ul class="list__product">
+                <li class="list-group-item">
+                    <h5>Bread</h5>
+                    <span class="price-item-checkout">10000</span>
+                </li>
+                <li class="list-group-item">
+                    <h5>Bread</h5>
+                    <span class="price-item-checkout">10000</span>
+                </li>
+                <li class="list-group-item">
+                    <h5>Bread</h5>
+                    <span class="price-item-checkout">10000</span>
+                </li>
+                 
+                <li class="list-group-item">
+                    <h5 style="color: #FFA500;">Order total:</h5>
+                    <span class="price-item-checkout">30000</span>
+                </li>
+                
+                
+            </ul>  
+          </div>
+          <div class="form__checkout-infor-customer col-md-7 order-md-1">
+             <h4>Add a new address</h4>
+             <div class="form__checkout-infor-desc">          
+             <form action="">
+                <div class="form__checkout-name form-simple">
+                    <label for="fullname">
+                        Full name (First and Last name)
+                    </label>
+                    <input id="fullname" type="text" required>
+                </div>
+                <div class="form__checkout-phone form-simple">
+                    <label for="phonenumber">
+                        Phone number
+                    </label>
+                    <input id="phonenumber" type="text" required>
+                </div>
+                <div class="form__checkout-address-street form-simple">
+                    <label for="address-street-checkout">
+                        Address
+                    </label>
+                    <input id="address-street-checkout" type="text" placeholder="Street address">
+                </div>
+                
+                <div class="form__checkout-payment-method">
+                    <h4>Payment method</h4> 
+                    <div class="form__checkout-payment">
+                        <input type="radio" id="cbs" name="payment" checked required> <label for="cbs">Cash before shipment</label><br>
+                        <input type="radio" id="cc" class="card__payment-method" name="payment" required> <label for="cc">Credit card</label><br>
+                        <input type="radio" id="dc" class="card__payment-method" name="payment" required> <label for="dc">Debit  card</label><br>
+                    </div>  
+                </div>
+
+                <div class="form__checkout-payment-method-card">
+                    <h2>Add a credit or debit card</h2>
+                    <div class="card-number fill-in-card">
+                        <label for="card__number-input">Card Number</label>
+                        <input id="card__number-input" type="text">
+                    </div>
+                    <div class="card-name fill-in-card">
+                        <label for="name__card-input">Name on card</label>
+                        <input id="name__card-input" type="text">
+                    </div>
+                    <div class="card-expiration fill-in-card">
+                        <label for="">Expiration date</label>                        
+                        <input type="date">
+
+                    </div>
+                    <div class="card-security-code fill-in-card">
+                         <label for="">Security Code</label>
+                         <input type="password">
+                    </div>
+                </div>
+                 
+                <button class="form__checkout-btn" type="button">Complete</button>
+            </form>
+        </div>
+          </div>
+        </div>
+  
+        <footer class="footer-checkout">
+          <p class="">2024-2025 Kahof Makede</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+          </ul>
+        </footer>
+        
+      </div>
+     <script src="./assets/js/footer.js"></script>
+       <script>
+              const priceItemCheckout = document.querySelectorAll('.price-item-checkout');
+              priceItemCheckout.forEach(function (element) {
+                let price = parseInt(element.innerText);
+                let formattedAmount = price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+                element.innerText = formattedAmount;
+            });
+
+            const tickCardMethods = document.querySelectorAll('.card__payment-method');
+            const tickBuyReal = document.getElementById('cbs');  
+            const tableCardMethod = document.querySelector('.form__checkout-payment-method-card')
+            for(const tickCardSimple of tickCardMethods){
+                tickCardSimple.addEventListener('click',function(){
+                    tableCardMethod.classList.add('form__checkout-payment-method-card-open')
+                })
+            }
+            tickBuyReal.addEventListener('click',function(){
+                tableCardMethod.classList.remove('form__checkout-payment-method-card-open')
+
+            })
+       </script>
+     
+</body>
+</html>
