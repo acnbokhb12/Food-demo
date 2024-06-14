@@ -49,7 +49,7 @@
     margin-bottom: 1rem;
 }
 
-.product__content__detail-rating-list {
+/* .product__content__detail-rating-list {
    
     padding-left: 0;
     padding-right: 1.2rem;
@@ -65,10 +65,44 @@
 .product__content__detail-rating-list li i {
     font-size: 1.4rem;
 
-}
-
+} */
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: "★";
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
 .product__content__detail-rating-customer p {
-    font-size: 1.4rem;
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-left: 4px;
 }
 
 .product__content__detail-rating-customer p a {
@@ -78,7 +112,7 @@
 }
 
 .product__content__detail-rating-customer p:hover a {
-    color: var(--purpo-color);
+    color: var(--orange-color);
 }
 
 .product__content__detail-desc p {
@@ -126,7 +160,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: var(--green-color);
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
     border: var(--green-color);
 }
 
@@ -165,7 +199,6 @@
     line-height: 2.5;
     text-transform: uppercase;
     font-weight: 700;
-    background-color: var(--green-color);
     border: none;
     display: flex;
     flex: 1;
@@ -177,7 +210,7 @@
 
 .product__detail-buybtn:first-child {
     margin-right: 10px;
-
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
 }
 
 .product__detail-buybtn:last-child {
@@ -273,7 +306,7 @@ input[type=number]:focus {
 }
 
 .description-recipe-open {
-    background-color: var(--green-color);
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
     border-radius: 8px;
 
 }

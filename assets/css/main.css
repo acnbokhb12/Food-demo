@@ -78,16 +78,16 @@
 .infor-account-list {
     list-style-type: none;
 
-}
-.header__top-infor-welcome-user {
-    position: relative;
-    cursor: pointer;
-    display: none;
+    }
+    .header__top-infor-welcome-user {
+        position: relative;
+        cursor: pointer;
+        display: none;
 
 }
 .header__top-infor-intro {
     /* position: absolute; */
-    background-color: #78bf4d;
+    background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
     display: flex;
     border-radius: 8px;
     padding: 0px 14px;
@@ -433,7 +433,7 @@
     margin-top: 12px;
     margin-left: 50%;
     transform: translateX(-50%);
-    /* text-align: center; */
+    text-align: center;
 }
 
 .home-link-script {
@@ -667,7 +667,7 @@
 }
 
 .weekly-title-header-menu {
-    background-color: #ffffff;
+    background-color: #000000;
     margin: 0 0 18px;
     border-radius: 8px;
 
@@ -680,7 +680,7 @@
 .weekly-body {}
 
 .header-title-item>h3 {
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     font-size: 2.6rem;
     padding: 8px 0;
@@ -1021,13 +1021,13 @@
     padding: 10px;
     margin: 4px 0 3rem;
     border-radius: 8px;
-    background-color: var(--green-color);
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
     border: none;
 }
 
 .link-back-home:hover {
     opacity: 0.9;
-    background-color: var(--green-color);
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
     border: none;
 }
 
@@ -1137,7 +1137,7 @@
     font-size: 1.8rem;
     border-radius: 8px;
     margin-bottom: 12px;
-    background-color: var(--green-color);
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
     border: none;
     font-weight: 500;
     color: #000;
@@ -1145,7 +1145,7 @@
 }
 
 .btn-login-user:hover {
-    background-color: var(--green-color);
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
     color: #000;
     border: none;
     opacity: 0.9;
@@ -1204,10 +1204,11 @@
 
 .signin-img-desc h3 {
     margin: 0 30px;
-    background-color: var(--green-color);
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
     padding: 1rem 0.2rem;
     border-radius: 4px;
     cursor: default;
+    color: #000;
 }
 
 .signin-img-desc p {
@@ -1287,7 +1288,7 @@
 }
 
 .btn-signup-user {
-    background-color: var(--green-color);
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
     border: none;
     color: #000;
     width: 100%;
@@ -1356,7 +1357,7 @@
 
 .signup-img-desc h3 {
     margin: 0 30px;
-    background-color: var(--green-color);
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
     padding: 10px 2px;
     border-radius: 4px;
     cursor: default;
@@ -1991,7 +1992,7 @@ i.home-product-item__like-icon-fill {
     }
 
     .btn-list-home:hover {
-        background-color: var(--green-color);
+        background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
         border-radius: 8px;
         color: #000;
         cursor: pointer;
@@ -2011,7 +2012,7 @@ i.home-product-item__like-icon-fill {
     }
 
     .close-navbar-icon-btn:hover {
-        background-color: var(--green-color);
+        background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
         color: #000;
         cursor: pointer;
     }
@@ -2072,7 +2073,7 @@ i.home-product-item__like-icon-fill {
     }
 
     .infor-account-list {
-        display: flex;
+        /* display: flex; */
     }
 
     .footer-distributed {
