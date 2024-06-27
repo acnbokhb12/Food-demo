@@ -21,7 +21,7 @@
     <div class="checkout-page-main container" >
         <header class="checkout-page-main-introheader">
           <h2 class="checkout-page-main-header col-12">Checkout form</h2>
-            <p class="text-intro-checkout col-12"> Please have your credit card information and shipping address ready.</p>  
+            <p class="text-intro-checkout col-12">Complete the form with your billing and shipping information. Double-check your details before submitting.</p>  
         </header>  
 
           
@@ -78,16 +78,86 @@
                 
                 <div class="form__checkout-payment-method">
                     <h4>Payment method</h4> 
-                    <div class="form__checkout-payment">
+                    <div class="container-brn-pay">
+                        <div class="custom-radio">
+                          <input type="radio" id="radio-1" class="card-tick-cash-byhand" name="tabs" checked="">
+                          <label class="radio-label" for="radio-1">
+                            <div class="radio-circle"></div>
+                            <span class="radio-text"><i class="fa-solid fa-money-bill"></i>Cash before shipment</span>
+                          </label>
+                          <input type="radio" id="radio-2" name="tabs" class="card__payment-method">
+                          <label class="radio-label" for="radio-2">
+                            <div class="radio-circle"></div>
+                            <span class="radio-text"><i class="fa-solid fa-credit-card"></i> Credit card</span>
+                          </label>
+                          <input type="radio" id="radio-3" name="tabs" class="card__payment-method">
+                          <label class="radio-label" for="radio-3">
+                            <div class="radio-circle"></div>
+                            <span class="radio-text "><i class="fa-solid fa-credit-card"></i> Debit card</span>
+                          </label>
+                        </div>
+                      </div>                            
+                    <!-- <div class="form__checkout-payment">
                         <input type="radio" id="cbs" name="payment" checked required> <label for="cbs">Cash before shipment</label><br>
                         <input type="radio" id="cc" class="card__payment-method" name="payment" required> <label for="cc">Credit card</label><br>
                         <input type="radio" id="dc" class="card__payment-method" name="payment" required> <label for="dc">Debit  card</label><br>
-                    </div>  
+                    </div>   -->
                 </div>
 
                 <div class="form__checkout-payment-method-card">
-                    <h2>Add a credit or debit card</h2>
-                    <div class="card-number fill-in-card">
+                    <!-- <h2>Add a credit or debit card</h2> -->
+                    <section class="add-card page">
+                        
+                          <label for="name" class="label">
+                            <span class="title">Name on card</span>
+                            <input
+                              class="input-field"
+                              type="text"
+                              name="input-name"
+                              title="Input title"
+                              placeholder="Enter your card name"
+                            />
+                          </label>
+                          <label for="serialCardNumber" class="label">
+                            <span class="title">Card Number</span>
+                            <input
+                              id="serialCardNumber"
+                              class="input-field"
+                              type="number"
+                              name="input-name"
+                              title="Input title"
+                              placeholder="0000 0000 0000 0000"
+                            />
+                          </label>
+                          <div class="split">
+                            <label for="ExDate" class="label">
+                              <span class="title">Expiry Date</span>
+                              <input
+                                id="ExDate"
+                                class="input-field"
+                                type="text"
+                                name="input-name"
+                                title="Expiry Date"
+                                placeholder="01/23"
+                              />
+                            </label>
+                            <label for="cvv" class="label">
+                              <span class="title"> CVV</span>
+                              <input
+                                id="cvv"
+                                class="input-field"
+                                type="number"
+                                name="cvv"
+                                title="CVV"
+                                placeholder="CVV"
+                              />
+                            </label>
+                          </div>
+                          
+                         
+                      </section>
+                      
+                    <!-- <div class="card-number fill-in-card">
                         <label for="card__number-input">Card Number</label>
                         <input id="card__number-input" type="text">
                     </div>
@@ -103,7 +173,7 @@
                     <div class="card-security-code fill-in-card">
                          <label for="">Security Code</label>
                          <input type="password">
-                    </div>
+                    </div> -->
                 </div>
                  
                 <button class="form__checkout-btn" type="button">Complete</button>
@@ -132,7 +202,7 @@
             });
 
             const tickCardMethods = document.querySelectorAll('.card__payment-method');
-            const tickBuyReal = document.getElementById('cbs');  
+            const tickBuyReal = document.querySelector('.card-tick-cash-byhand');  
             const tableCardMethod = document.querySelector('.form__checkout-payment-method-card')
             for(const tickCardSimple of tickCardMethods){
                 tickCardSimple.addEventListener('click',function(){

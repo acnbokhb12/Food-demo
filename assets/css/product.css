@@ -238,6 +238,176 @@ input[type=number]:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
+/* go to  */
+.contain-btn-add-weekly{
+    padding: 20px 15px ;
+    border-top: 1px #959595 solid;
+}
+#dateInput{
+    width: 50%;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    border-color: #e58e09;
+    color: #000;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+.btn-add-weekly {
+    position: relative;
+    padding: 6px 35px;
+    background: #fec195;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid var(--orange-color);
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 700;
+    width: 100%;
+  }
+ 
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+  }
+  
+  .btn-add-weekly:hover {
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+
+    color: #000;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  .btn-add-weekly:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .btn-add-weekly:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .btn-add-weekly:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .btn-add-weekly:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .btn-add-weekly:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .btn-add-weekly:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #000;
+  }
+  
 
 .product__content__extra-info {
     padding: 2.4rem 0;
@@ -342,7 +512,7 @@ input[type=number]:focus {
 
 .product_ingredient-img-element img {
     width: 100%;
-    height: 130px;
+    height: 200px;
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -372,7 +542,7 @@ input[type=number]:focus {
     overflow: hidden;
     line-height: 3rem;
     height: 3rem;
-    font-size: 3rem;
+    font-size: 2.6rem;
     display: block;
     color: var(--white-color);
     display: -webkit-box;
@@ -388,7 +558,9 @@ input[type=number]:focus {
 .ingredient__quantity-element>h2:first-child {
     margin-right: 8px;
 }
-
+.product_ingredient-description-element >h2{
+    font-size: 2rem;
+}
 .product__content-recipe {
     display: none;
     width: 100%;
@@ -398,6 +570,7 @@ input[type=number]:focus {
 .product__content-recipe-descripion {
     background-color: #e5e7eb;
     border-radius: 8px;
+    margin-top: 20px;
 }
 
 .product__content-recipe-descripion h5 {
@@ -408,7 +581,27 @@ input[type=number]:focus {
 .open-recipe-close-ingredient {
     display: block;
 }
+.totalPrice-ingredient{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.title-price-ingr{
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 4px 10px;
+}
 
+#price-detial-ingrs{
+    /* display: inline-block; */
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 4px 10px;
+}
+.title-price-ingr{
+    background-image: var( --liner--garrdien);
+    border-radius: 8px;
+}
 @media screen and (max-width:1200px) {
     .product__content__extra-brand {
         flex-direction: column;
@@ -465,6 +658,9 @@ input[type=number]:focus {
         height: 400px;
         width: 100%;
         margin-bottom: 20px;
+    }
+    #dateInput{
+        width: 100%;
     }
 
 }
