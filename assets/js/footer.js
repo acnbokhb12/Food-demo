@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
             <h3>Make Or <span>Made</span></h3>
 
             <p class="footer-links">
-                <a href="#" class="link-1">Home</a>
+                <a href="Home.html" class="link-1">Home</a>
 
-                <a href="#">About </a>
+                <a href="aboutus.html">About </a>
 
-                <a href="#">Menu</a>
+                <a href="menu.html">Menu</a>
 
-                <a href="#">Blog</a>
+                <a href="weekly.html">Weekly</a>
 
                 <!-- <a href="#">Faq</a> -->
 

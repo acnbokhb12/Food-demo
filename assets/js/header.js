@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="header__second-list col-lg-9 ">
                             <ul class="header-list-nav-page">
                                 <li><a href="Home.html">Home</a></li>
-                                <li><a href="#">About</a></li>
+                                <li><a href="aboutus.html">About</a></li>
                                 <li><a href="Menu.html">Menu</a></li>
                                 <li><a href="weekly.html">Weekly</a></li>
                                 <li><a href="#">Contact</a></li>
