@@ -664,7 +664,15 @@ input[type=number]:focus {
     }
 
 }
-
+@media screen and (max-width:575px) {
+    .product__content__detail-rating{
+        flex-direction: column;
+        align-items: start;
+    }
+    .product__content__detail-desc p{
+        margin-left: 4px;
+    }
+}
 @media screen and (max-width:420px) {
     .product__content__detail-info-img img {
         height: 260px;

@@ -861,6 +861,12 @@ input[type=number]:focus {
         padding: 0.6rem 1.7rem;
 
     }
+    .cart__about__check-subtotal-container-row,
+    .cart__about__property-desc{
+        margin: 0 auto 10px;
+    }
+
+    
     .icon-1{
         display: flex;
     }
