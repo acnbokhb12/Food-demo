@@ -146,7 +146,7 @@
     justify-content: space-evenly;
 }
 .space-betw{
-    /* width: 100px; */
+    display: none;
 }
 
 @media screen and (max-width:768px) {
@@ -158,6 +158,11 @@
     }
     .item-desc-intro{
         flex-direction: column;
+    }
+    .space-betw{
+        display: block;
+        width: 100%;
+        height: 30px;
     }
     .img-first{
         width: 100%;
@@ -180,5 +185,19 @@
     }
     .post-entry-aboutus p{
         /* font-size: 1.2rem; */
+    }
+}
+@media screen and (max-width:400px) {
+    .container-intro-aboutus{
+        width: 90%;
+    }
+    .img-first{
+
+        height: 300px;
+    }
+    .img-first img{
+    }
+    .text-desc{
+        padding: 10px;
     }
 }
