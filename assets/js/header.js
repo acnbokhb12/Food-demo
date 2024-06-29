@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <li><a href="aboutus.html">About</a></li>
                                 <li><a href="Menu.html">Menu</a></li>
                                 <li><a href="weekly.html">Weekly</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="contact.html">Contact</a></li>
 
                             </ul>
                         </div>
