@@ -374,3 +374,16 @@ background-color: #ffffff;
         top: calc(100% + 12px);
     }
 }
+@media screen and (max-width : 575px) {
+    .calendar-month{
+        height: 75px;
+    }
+    .day-item{
+        height: 50px;
+        font-size: 1.2rem;
+    }
+.calender-days .active{
+    font-size: 1.4rem;
+}
+
+}
