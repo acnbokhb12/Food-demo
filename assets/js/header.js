@@ -104,10 +104,10 @@ document.addEventListener("DOMContentLoaded", function () {
         <section class="header__second__nav">
             <div class="header__second_nav-container container">
                 <div class="row header__second_nav-btn-new">
-                    <a href="Home.html" class="header__second-img col-lg-3">
+                    <a href="Home.html" class="header__second-img col-lg-2">
                         <img src="./assets/img/logo/K-Photoroom.png-Photoroom.png" alt="">
                     </a>
-                    <div class="row col-lg-9 nav-bar-menu">
+                    <div class="row col-lg-10 nav-bar-menu">
                         <span class="close-navbar-icon"><i class="fa-solid fa-xmark close-navbar-icon-btn"></i></span>
                         <div class="header__second-list col-lg-9 ">
                             <ul class="header-list-nav-page">

@@ -235,11 +235,11 @@
     display: flex;
     align-items: center;
     /* min-width: 205px; */
+    padding-right: 0;
 }
 
 .header__second-img img {
     max-width: 100%;
-
     height: 80px;
     object-fit: cover;
     background-size: 100%;
@@ -253,6 +253,8 @@
     display: flex;
     align-items: center;
     padding: 0 0 0 15px;
+    justify-content: center;
+    padding-left: 0;
 }
 
 .header-list-nav-page {
