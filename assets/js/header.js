@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="header__top-infor-welcome-user">
                         <div class="header__top-infor-intro">
 
-                            <p class="header__top-infor-welcome-name">
+                            <p class="header__top-infor-welcome-name" style="font-weight:600;">
                                 <i class="fa-solid fa-user"></i>Khanhhn
                             </p>
                         </div>
@@ -69,25 +69,35 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="welcome-about-acc-list">
                                 <section class="welcome-about-acc-header">
                                     <div class="welcome-about-detail-account">
-                                        <p>
+                                        <p style="font-weight:500; color:#000;">
                                             Khanhhn
 
                                         </p>
                                         <a href="">
-                                            View detail your account
+                                           <i class="fa-solid fa-file-invoice"></i> My Account
                                         </a>
                                     </div>
                                 </section>
                                 <section class="welcome-about-acc-body">
                                     <ul class="about-acc-header-list">
                                         <li class="about-acc-header-item">
-                                            <a href="">
+                                            <a href="orderhistory.html">
+                                                <i class="fa-solid fa-eye"></i> Order History
+                                            </a>
+                                        </li>
+                                        <li class="about-acc-header-item">
+                                            <a href="weekly.html">
+                                                <i class="fa-solid fa-calendar-days"></i> My Meal Plan
+                                            </a>
+                                        </li>
+                                        <li class="about-acc-header-item">
+                                            <a href="#">
                                                 <i class="fas fa-sign-out"></i> Log out
                                             </a>
                                         </li>
 
                                         <li class="about-acc-header-item">
-                                            <a href="">
+                                            <a href="#">
                                                 <i class="fa-regular fa-circle-question"></i> Support
                                             </a>
                                         </li>
@@ -114,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <li><a href="Home.html">Home</a></li>
                                 <li><a href="aboutus.html">About</a></li>
                                 <li><a href="Menu.html">Menu</a></li>
-                                <li><a href="weekly.html">Weekly</a></li>
+                                <li><a href="weeklymain.html">Weekly</a></li>
                                 <li><a href="contact.html">Contact</a></li>
 
                             </ul>

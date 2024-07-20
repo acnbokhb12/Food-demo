@@ -21,8 +21,8 @@
     <!-- nhung header -->
     <script src="./assets/js/header.js"></script>
     <div class="calendar__main">
-
-
+        
+        
         <div class="container container__weekly">
             <!-- <div class="row row__weekly"> -->
 
@@ -50,6 +50,7 @@
                     </div>
                     <!-- go to day -->
                     <div class="calendar-goto-today">
+                        
                         <div class="goto">
                             <input type="text" placeholder="mm/yy" class="date-input">
                             <button class="goto-btn">Go</button>
@@ -59,6 +60,12 @@
                 </div>
             </div>
             <div class="favorite-right ">
+                <div class="btn-save-weekly container">
+                    <button class="learn-more">
+                        <a href="#" class="text-capitalize">Save Meal</a>
+                    </button>
+            
+                </div>
                 <div class="today-date">
                     <div class="event-day">Wed</div>
                     <div class="event-date">16 November 2022</div>
@@ -71,12 +78,16 @@
 
                 </div>
             </div>
-
-            <!-- </div> -->
-        </div>
+            
+        <!-- </div> -->
+         
+    </div>
+    
     </div>
     <script src="./assets/js/footer.js"></script>
     <script>
+        const a = 3;
+        console.log(typeof a)
         const calendar = document.querySelector('.calendar__weekly'),
             date = document.querySelector('.date__month'),
             daysContainer = document.querySelector('.calender-days'),
@@ -88,8 +99,7 @@
 
         // date 2 event
         const eventDay = document.querySelector('.event-day'),
-            eventDate = document.querySelector('.event-date');
-
+            eventDate = document.querySelector('.event-date');  
         let today = new Date();
         let activeDay;
         let month = today.getMonth();
@@ -99,10 +109,13 @@
             "January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
         ];
-        const eventsArr = [
+        const dayAdd = 6;
+
+        var eventsArr = [
+       
             {
                 day: 1,
-                month: 7,
+                month: 9,
                 year: 2024,
 
                 events: [
@@ -119,26 +132,8 @@
                         cate: "Bread"
                     }
                 ]
-            },
-            {
-                day: 5,
-                month: 7,
-                year: 2024,
-                events: [
-                    {
-                        id: "1",
-                        img: "https://www.allrecipes.com/thmb/CjzJwg2pACUzGODdxJL1BJDRx9Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6788-amish-white-bread-DDMFS-4x3-6faa1e552bdb4f6eabdd7791e59b3c84.jpg",
-                        name: "Amish bread",
-                        cate: "Bread"
-                    },
-                    {
-                        id: "3",
-                        img: "https://www.allrecipes.com/thmb/CjzJwg2pACUzGODdxJL1BJDRx9Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6788-amish-white-bread-DDMFS-4x3-6faa1e552bdb4f6eabdd7791e59b3c84.jpg",
-                        name: "Amish bread",
-                        cate: "Bread"
-                    }
-                ]
             }
+             
         ];
         // function to add days
         function initCalendar() {
@@ -378,7 +373,8 @@
                     event.events.forEach((event) => {
                         events += `
                     
-                        <div class="event">
+                        <div class="event" >
+                            
                         <div class="id-food">${event.id}</div>
                         <img class="img-food-weekly" src="${event.img}" alt="">
                         <div class="link-food-weekly">
@@ -410,16 +406,21 @@
             if (e.target.classList.contains("event")) {
 
                 if (confirm("Are you sure you want to delete this event?")) {
+                    
                     const eventId = e.target.children[0].innerHTML;
-
+                    const dateNeedToDelete  = '';
+                   
                     eventsArr.forEach((event) => {
                         if (
+                            
                             event.day === activeDay &&
                             event.month === month + 1 &&
                             event.year === year
-                        ) {
+                        ){
+                            dateNeedToDelete = event.year+'-'+event.month+'-'+event.day;
                             event.events.forEach((item, index) => {
-                                if (item.id === eventId) {
+                                if (item.id === eventId ) {
+                                    
                                     event.events.splice(index, 1);
                                 }
                             });
@@ -435,6 +436,24 @@
                         }
                     });
                     updateEvents(activeDay);
+                    // const form =document.createElement('form');
+                    // form.method = 'POST';
+                    // form.action = 'dien cai servlet m muon xu ly';
+
+                    // const  input1 = document.createElement('input');
+                    // input1.type = 'hidden';
+                    // input1.name = 'dien cai name de ma xoa cai id  qua kia la lay request.getPara';
+                    // input1.value = eventId;
+                    // form.appendChild(input1);
+                    
+                    // const  input2 = document.createElement('input');
+                    // input2.type = 'hidden';
+                    // input2.name = 'cai nay la cai date '; 
+                    // input2.value = dateNeedToDelete;
+                    // form.appendChild(input2);
+
+                    // document.body.appendChild(form);
+                    // form.submit();
                 }
             }
         });

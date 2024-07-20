@@ -77,12 +77,12 @@
 /* Acount register login */
 .infor-account-list {
     list-style-type: none;
-
-    }
-    .header__top-infor-welcome-user {
-        position: relative ;
+    
+}
+.header__top-infor-welcome-user {
+    position: relative ;
+    display: none;
         cursor: pointer;
-        display: none;
 
 }
 .header__top-infor-intro {
@@ -660,7 +660,7 @@
 .weekly__container__date {
     width: 82%;
     margin: 0 auto;
-    padding: 10px 0 20px;
+    padding: 116px 0 20px;
 }
 
 .weekly__time-item {
@@ -716,9 +716,12 @@
     text-align: center;
     padding: 8px 0;
     overflow: hidden;
+    text-decoration: none;
 
 }
-
+.header-menu-item-img :hover{
+    text-decoration: none;
+}
 .header-menu-item-img img {
     width: 18rem;
     height: 14rem;
@@ -726,6 +729,7 @@
     background-position: center;
     border-radius: 8px;
     transition: transform 0.4s ease;
+    text-decoration: none;
 }
 
 .contain-food-weekly:hover .header-menu-item-img img {
@@ -758,7 +762,7 @@
 .header-menu-item-date:hover .day-of-week {
     text-decoration: none;
 }
-
+/* wweeklymenumain */
 .header-menu-item-name,
 .header-menu-item-price {
     color: var(--black-color);
@@ -771,7 +775,13 @@
     transition: transform 0.4s ease;
 
 }
+.header-menu-item-name h3{
+    font-size: 2.2rem;
 
+}
+.price-food-weekly{
+    font-size: 2.2rem;
+}
 .contain-food-weekly:hover .header-menu-item-date h1,
 .contain-food-weekly:hover .header-menu-item-name,
 .contain-food-weekly:hover .header-menu-item-price {

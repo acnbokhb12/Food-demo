@@ -478,6 +478,7 @@ input[type=number]:focus {
     margin-left: -15px;
     margin-right: -15px;
     border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .checkout-page-main-header {
@@ -493,6 +494,7 @@ input[type=number]:focus {
 .form__checkout-infor-customer {
     background-color: #ffffff;
     padding-right: 0;
+   
 
 }
 
@@ -584,44 +586,127 @@ input[type=number]:focus {
 .list-inline-item a {
     color: var(--orange-color);
 }
-
+.form__checkout-main{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
 .form__checkout-infor-cast {
-
-    background-color:  var( --subheader-color);
+    background: url('https://assets.vogue.com/photos/65f04d926294babad5413eb1/master/w_2560%2Cc_limit/GettyImages-1380534040.jpg') no-repeat;
+    /* background-color:  var( --subheader-color); */
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    
 }
 
 .checkout-infor-cast-title {
     display: flex;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 1rem 0;
     padding-bottom: 0.8rem;
     border-bottom: 1px solid #000;
 }
-
-.list__product {
-    /* border-radius: 8px; */
-    padding-left: 0;
+.checkout-infor-cast-title span {
+    background-color: #ffffff;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+.checkout-infor-cast-title span >a{
+    color: var(--orange-color);
+    /* text-decoration: none; */
 }
 
-.list-group-item {
+.list__product {   
+    padding-left: 0; 
+}
+
+.list-group-item {   
+    margin-bottom: 0.8rem;
+    padding: 1.2rem 1rem ;
+    border-radius: 4px;
+}
+ .item-detail-desc{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem ;
+    margin-top: 0.8rem;
+    
+    
+ }
+.contain-img-product{
+    overflow: auto;
+    height: 100px;
+    width: 40%;
+    
 }
-
-.list-group-item h5 {
+.contain-img-product img {
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.description-product{
+    width: 60%;
+    margin: 0 0 0 24px;
+}
+ 
+.description-product-name{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-weight: 600;
+    line-height: 2.2rem;
+    height: 2.2rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    margin-bottom: 0.8rem;
+}
+.description-product-type{
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+.description-product-type span {
+    background-color: var(--orange-color);
+    padding: 1px 8px;
+    border-radius: 4px;
+}
+.price-item-checkout{
+    font-size: 1.7rem;
+     
+}
+.subtotal-item{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.price-subtotal,
+.name-price-subtotal{
+    font-size: 2rem;
+    font-weight: 500;
     margin-bottom: 0;
-    font-size: 1.8rem;
-    font-weight: 600;
 
 }
-
-.list-group-item span {
-    font-size: 1.8rem;
-    font-weight: 600;
+.list-group-item-total{
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 0.8rem;
+    padding: 1.2rem 1rem ;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
 }
+.list-group-item-total span,
+.list-group-item-total h5{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+
 .form__checkout-payment-method-card{
     margin-bottom: 1.5rem;
     display: none;

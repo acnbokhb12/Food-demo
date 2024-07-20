@@ -1,0 +1,144 @@
+.weekly__container__date{
+    width: 100%;
+}
+
+.header-menu-item-date{
+    background-color: #fff;
+    display: flex;
+}
+.header-menu-item-date-desc{
+    background-color: rgb(94, 94, 94);
+    width: 190px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.header-menu-item-date-desc h1{
+    font-weight: 500;
+    font-size: 3rem;
+}
+.weekly-title-header-menu{
+    border-radius: 0;
+}
+.weekly-body-header-menu{
+    border-radius: 0;
+}
+.header-menu-item-date{
+    border-radius: 0;
+    
+   
+}
+.container-infor-fooditem{
+    display: flex;
+    justify-content: center;
+}
+.contain-food-weekly:hover .header-menu-item-date h1{
+    transform:scale(1.2);
+    color: #fff;
+      
+}
+.flip-card-front img{
+            
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.flip-card-front p{
+    
+}
+.flip-card {
+background-color: transparent;
+width: 190px;
+height: 254px;
+perspective: 1000px;
+font-family: sans-serif;
+display: block;
+color:#000;
+margin: 10px 0;
+}
+.flip-card:hover{
+color: #000;
+}
+
+.title {
+ 
+font-weight: 900;
+text-align: center;
+margin: 6px 0;
+
+font-size: 2rem;
+
+font-weight: 600;
+line-height: 2rem;
+height: 2rem;
+overflow: hidden;
+display: block;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+text-overflow: ellipsis;
+
+text-transform: capitalize;
+padding: 0px 6px;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border: 1px solid #fba2d7;
+border-radius: 1rem;
+}
+
+.flip-card-front {
+/* background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+color: coral; */
+
+}
+
+
+.flip-card-back {
+ 
+/* background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+bisque 40%, rgb(255, 185, 160) 78%); */
+background: linear-gradient(120deg, #fbc2eb 30%, #a6c1ee 88%, #fddb92 40%, #d1fdff 78%);
+
+color: #000;
+transform: rotateY(180deg);
+}
+.flip-card-back p{
+    font-size: 2rem;
+}
+  
+ 
+@media screen and (max-width: 768px) {
+    .weekly-title-header-menu {
+        display: flex;
+    }
+}
